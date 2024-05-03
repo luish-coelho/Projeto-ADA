@@ -1,0 +1,50 @@
+/* Estilo para o corpo da página */
+body {
+    background-color: #333; /* Define a cor do fundo */
+    color: #fff; /* Define a cor do texto*/
+    font-family: Arial, sans-serif; /* Define a fonte */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Estilo para a imagem do robô */
+#robo {
+    position: fixed; /* Define a posição como relativa */
+    z-index: 2; /* Garante que o robô esteja à frente da caixa de mensagem */
+    bottom: 90px;
+    left: 1350px;
+    padding: 20px;
+    top: 700px;
+}
+
+#robo-imagem {
+    width: 150px; /* Define a largura da imagem */
+    height: auto; /* Permite que a altura seja ajustada automaticamente mantendo a proporção */
+}
+
+/* Estilo para a caixa de mensagem */
+#mensagem-container {
+    background-color: #5195c2; /* Define o fundo como preto */
+    position: fixed; /* Define a posição como fixa */
+    bottom: 75px; /* Define a distância do fundo da página */
+    right: 20px; /* Define a distância da direita da página */
+    padding: 20px; /* Adiciona espaço interno */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao container */
+    max-width: 300px; /* Define a largura máxima do container */
+    z-index: 1; /* Garante que a caixa de mensagem esteja atrás do robô */
+}
+
+
+/* Estilo para o texto da mensagem */
+#mensagem {
+    font-family: Arial, sans-serif; /* Define a fonte*/
+    font-size: 14px; /* Define o tamanho da fonte */
+    word-wrap: break-word; /* Permite a quebra de palavras longas */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.5s ease; /* Adiciona uma transição suave de opacidade */
+    text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px #000; /* Adiciona um contorno preto */
+}
+
+
+
